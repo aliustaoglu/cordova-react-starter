@@ -1,0 +1,137 @@
+{
+  "_from": "cordova-plugin-webpack",
+  "_id": "cordova-plugin-webpack@0.4.4",
+  "_inBundle": false,
+  "_integrity": "sha512-8Z7l6HRSS2jPU1pVLWqo4td8mw2UvYVZcM6lK0CYlGLh2+P2QdoobHL2zsIH/8ZdTGTCk9djHHA2h0K8kpz/4w==",
+  "_location": "/cordova-plugin-webpack",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-webpack",
+    "name": "cordova-plugin-webpack",
+    "escapedName": "cordova-plugin-webpack",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-webpack/-/cordova-plugin-webpack-0.4.4.tgz",
+  "_shasum": "72a825dfcbfde732d3c66f08fc489ef6cce19266",
+  "_spec": "cordova-plugin-webpack",
+  "_where": "/Development/Cordova/cordova-react-starter",
+  "author": {
+    "name": "Kotaro Sugawara"
+  },
+  "bugs": {
+    "url": "https://github.com/kotarella1110/cordova-plugin-webpack/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-webpack",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "@types/elementtree": "^0.1.0",
+    "@types/findup-sync": "^2.0.2",
+    "@types/interpret": "^1.1.1",
+    "@types/ip": "^1.1.0",
+    "@types/node": "^12.6.8",
+    "@types/react-dev-utils": "^9.0.1",
+    "@types/rechoir": "^0.6.1",
+    "@types/webpack": "^4.32.1",
+    "@types/webpack-dev-server": "^3.1.7",
+    "@types/yargs-parser": "^13.0.0",
+    "cordova-common": "^3.2.0",
+    "create-html": "^4.1.0",
+    "csp-parse": "0.0.2",
+    "current-device": "^0.8.2",
+    "elementtree": "^0.1.7",
+    "express": "^4.17.1",
+    "findup-sync": "^4.0.0",
+    "glob": "^7.1.4",
+    "interpret": "^1.2.0",
+    "ip": "^1.1.5",
+    "is-ua-webview": "^1.0.1",
+    "react-dev-utils": "^9.0.1",
+    "rechoir": "^0.7.0",
+    "source-map-support": "^0.5.12",
+    "webpack": "^4.37.0",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-inject-plugin": "^1.5.2",
+    "yargs-parser": "^13.1.1"
+  },
+  "deprecated": false,
+  "description": "Cordova Webpack Plugin",
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/prompt-cli": "^8.1.0",
+    "@types/jest": "^24.0.15",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.1",
+    "install": "^0.13.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.1",
+    "npm-check": "^5.9.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
+    "webpack-cli": "^3.3.6"
+  },
+  "homepage": "https://github.com/kotarella1110/cordova-plugin-webpack#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "cordova",
+    "webpack",
+    "ecosystem:cordova",
+    "cordova-browser",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache-2.0",
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "name": "cordova-plugin-webpack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotarella1110/cordova-plugin-webpack.git"
+  },
+  "scripts": {
+    "build": "rimraf scripts/* && tsc && webpack",
+    "commit": "commit",
+    "lint": "eslint '**/*.{js,ts}'",
+    "lint:fix": "npm run lint -- --fix",
+    "precommit": "lint-staged",
+    "prepare": "npm run build",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "upgrade-interactive": "npm-check --update"
+  },
+  "version": "0.4.4"
+}

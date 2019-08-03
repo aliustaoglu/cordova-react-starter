@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "allowJs": true,
+    "outDir": "scripts",
+    "removeComments": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "typings/*"
+      ]
+    },
+    "typeRoots": [
+      "./typings",
+      "./node_modules/@types"
+    ],
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
